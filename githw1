@@ -1,0 +1,40 @@
+1) Посмотреть где я: pwd
+2) Создать папку: mkdir name_folder
+3) Зайти в папку: cd name_folder
+4) Создать 3 папки:  mkdir name_folder1 name_folder2 name_folder3
+5) Зайти в любую папку: cd name_folder1
+6) Создать 5 файлов (3 txt, 2 json): touch name1.txt name2.txt name3.txt name1.json name2.json
+7) Создать 3 папки: mkdir name_folder1 name_folder2 name_folder3
+8) Вывести список содержимого папки: ls -la
+9) + Открыть любой txt файл: cat name1.txt
+10) + написать туда что-нибудь, любой текст: cat >> Hello
+11) + сохранить и выйти: ctrl + C
+12) Выйти из папки на уровень выше: cd..
+13) переместить любые 2 файла, которые вы создали, в любую другую папку: mv d1/name_folder2/name1.txt  name2.txt d1/name_folder1
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку: cp d2/name_folder1/name1.txt name2.txt d1/name_folder2
+15) Найти файл по имени: find /d1 -name
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает: tail -f /d2/name_folder1/name1.txt  | grep [name.file]
+17) вывести несколько первых строк из текстового файла: head -2 d1/name_folder2/name1.txt 
+18) вывести несколько последних строк из текстового файла: tail -n d1/name_folder2/name1.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает: less d1/name_folder2/name1.txt
+20) вывести дату и время: date
+
+Задание *
+1) Отправить http запрос на сервер:
+http://162.55.220.72:5006/terminal-hw-request
+curl http://162.55.220.72:5006/terminal-hw-request
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13:
+touch myscript.sh
+nano myscript.sh / vim myscript.sh
+
+cd name_folder
+mkdir name_folder1 name_folder2 name_folder3
+cd name_folder1
+touch name1.txt name2.txt name3.txt name1.json name2.json
+mkdir name_folder1 name_folder2 name_folder3
+ls -la
+mv d1/name_folder2/name1.txt  name2.txt d1/name_folder1
+
+ctrl + O
+ctrl + X/:wq
+
