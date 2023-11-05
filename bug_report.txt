@@ -1,0 +1,11 @@
+Bug Report:
+
+ID: 1
+Environment: Windows 11 pro
+Precondition: Open sit link
+Title: THere is main description of the problem
+Link: link
+STR: steps
+Expected Result: window appears
+Actual Result: window disappears
+Severity: Major
